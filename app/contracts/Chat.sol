@@ -14,6 +14,7 @@ contract Chat {
 	address[] onlineUsers;
 
 	event SendMessage(address from, string nickname, string message);
+	event NotRegistered(address from);
 	event UserRegister(address from, string nickname);
 	event UserJoin(address from, string nickname);
 	event UserLeave(address from, string nickname);
@@ -48,6 +49,11 @@ contract Chat {
 	}
 
 	function sendMessage(string message) {
+		if (bytes(users[msg.sender].nickname).length == 0) {
+			NotRegistered(msg.sender);
+			return;
+		}
+
 		SendMessage(msg.sender, users[msg.sender].nickname, message);
 	}
 }

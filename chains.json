@@ -24,6 +24,14 @@
       "0xb4a403c4bb54f53003894613e3219a9b05bdadb2c14b3a2f0e5f7573a0d9a31b": {
         "name": "Chat",
         "address": "0x0f4769e51630511bc11024a8aa9bb31c5bed3f6f"
+      },
+      "0x72d22a709707a686c442d39a4d1de7712b27d8bb04d34192276257d5200f8e75": {
+        "name": "Chat",
+        "address": "0x2313af6a1eeaa15e8ed8900e5f2343949619fcf9"
+      },
+      "0x2dcf538766dcb1d26eb2d7d72b8d0c59eaca997173a7b45119af99f87bd9fc16": {
+        "name": "Chat",
+        "address": "0x61afe1945ee07f7de7723cb368fbcbf4ebb791a3"
       }
     },
     "name": "development"
