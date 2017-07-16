@@ -1,16 +1,8 @@
-// ReactDOM.render(React.createElement(
-//     'h1',
-//     null,
-//     'Hello, world!'
-// ), document.getElementById('root'));
-
-
 document.addEventListener("DOMContentLoaded", function(event) {
 
     console.log(Chat);
 
-    Chat.register("Steamrunner");
-
+    Chat.sendMessage("Hello world!");
 
 
     // Events
@@ -31,10 +23,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
             console.log("this isn't message for you, ignore...");
         }
 
+        Chat.register("Steamrunner");
     });
 
     Chat.SendMessage().then(function(event) {
-        console.log("Message");
-        console.log(event.args.message)
+        console.log("Message", event.args.message);
     });
 });
