@@ -4,6 +4,10 @@
       "0x0b8cd98cf97a1e14bffd0e35ff5e644197a569689397a81d993e62d4a4daa810": {
         "name": "chat",
         "address": "0x45ece26942c92e86cff12c1b6fa9095aeb7122e1"
+      },
+      "0xdd531ddffacb7b2f399bb9a7ee5a598215b58e29a01b04975bc43600d53f40a9": {
+        "name": "chat",
+        "address": "0xbaa527be6ccf825b3bfa3cf5f1ec6617b679cb2a"
       }
     },
     "name": "development"

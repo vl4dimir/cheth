@@ -1,6 +1,6 @@
 pragma solidity ^0.4.2;
 
-contract chat {
+contract Chat {
 	address owner;
 	/*mapping(address => Voter) voters;*/
 
