@@ -1,1 +1,11 @@
-{}
+{
+  "0xa3c565fc15c7478862d50ccd6561e3c06b24cc509bf388941c25ea985ce32cb9": {
+    "contracts": {
+      "0x0b8cd98cf97a1e14bffd0e35ff5e644197a569689397a81d993e62d4a4daa810": {
+        "name": "chat",
+        "address": "0x45ece26942c92e86cff12c1b6fa9095aeb7122e1"
+      }
+    },
+    "name": "development"
+  }
+}
