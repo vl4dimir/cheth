@@ -14,6 +14,9 @@ contract Chat {
 	address[] onlineUsers;
 
 	event SendMessage(address from, string nickname, string message);
+	event UserRegister(address from, string nickname);
+	event UserJoin(address from, string nickname);
+	event UserLeave(address from, string nickname);
 
 	function Chat() {
 		owner = msg.sender;
@@ -21,6 +24,8 @@ contract Chat {
 
 	function register(string nickname) {
 		users[msg.sender].nickname = nickname;
+
+		UserRegister(msg.sender, nickname);
 	}
 
 	function join() {
@@ -28,6 +33,8 @@ contract Chat {
 
 		// Index will be off-by-one intentionally, see comment for onlineIndex
 		users[msg.sender].onlineIndex = onlineUsers.length;
+
+		UserJoin(msg.sender, users[msg.sender].nickname);
 	}
 
 	function leave() {
@@ -36,6 +43,8 @@ contract Chat {
 			delete onlineUsers[index - 1];
 			users[msg.sender].onlineIndex = 0;
 		}
+
+		UserLeave(msg.sender, users[msg.sender].nickname);
 	}
 
 	function sendMessage(string message) {

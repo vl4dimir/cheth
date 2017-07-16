@@ -1,1 +1,31 @@
-{}
+{
+  "0xa3c565fc15c7478862d50ccd6561e3c06b24cc509bf388941c25ea985ce32cb9": {
+    "contracts": {
+      "0x0b8cd98cf97a1e14bffd0e35ff5e644197a569689397a81d993e62d4a4daa810": {
+        "name": "chat",
+        "address": "0x45ece26942c92e86cff12c1b6fa9095aeb7122e1"
+      },
+      "0x1a46a515e78b8399cd36f54dad1f71b7d63850a4ec31530a426b39bd20d4a0ea": {
+        "name": "Chat",
+        "address": "0x6e2bfea14d01d2aff74980f1191a87142bba429e"
+      },
+      "0x8a912a5ebda183fb4eb7237f6fc548f999f10e753714e345c4d4f575f580f5d7": {
+        "name": "Chat",
+        "address": "0x2647cdbabc0b56971eb8b9bb87f5048693dbb946"
+      },
+      "0xb2cc947096376ae364d4801e4632d5b104b0b10ba7a8926c7b616708fccd08fb": {
+        "name": "Chat",
+        "address": "0xda73e3400c392593b35d5bab7f730c5b36a2ff73"
+      },
+      "0x412195d90aa78edd743a6e239a00319f732b1c6d53117e885e41319fc31b5581": {
+        "name": "Chat",
+        "address": "0x4747a35ed0538ee9f58c43332975c2958c8697df"
+      },
+      "0xb4a403c4bb54f53003894613e3219a9b05bdadb2c14b3a2f0e5f7573a0d9a31b": {
+        "name": "Chat",
+        "address": "0x0f4769e51630511bc11024a8aa9bb31c5bed3f6f"
+      }
+    },
+    "name": "development"
+  }
+}
