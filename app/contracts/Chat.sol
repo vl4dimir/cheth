@@ -40,6 +40,8 @@ contract Chat {
 		users[msg.sender].onlineIndex = onlineUsers.length;
 
 		for (uint i = 0; i < onlineUsers.length; i++) {
+			// VERY expensive! Whenever someone joins, Ethereum logs are spammed with a list of all
+			// currently online users.
 			UserOnline(onlineUsers[i].addr, onlineUsers[i].nickname);
 		}
 	}

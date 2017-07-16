@@ -44,6 +44,22 @@
       "0xfe73ba69940df1b7871229c19fc27002f241df6e687e1cb76979f88dea056fe5": {
         "name": "Chat",
         "address": "0x6c57e390819dd8a4bd2149188daef22c588b9f18"
+      },
+      "0x8627fb2ad9b71868d1f99ba7173c21601687f93070f46a63bf6d32440dc0c2b6": {
+        "name": "Chat",
+        "address": "0x17b07f16b3ffce5c83aca6c4ef6a5a57cd9168f1"
+      },
+      "0xf61c60646725f0f5392d022cc82eca077912347003e66dd40e35401478b5d00b": {
+        "name": "Chat",
+        "address": "0xa7e408850f5ea1d150f273baee3f3d3fad0c4ff6"
+      },
+      "0x22846d59630bfb658b3ba03e7eeedf7aeb4c8849e9ab2ea5e07bce59563cf690": {
+        "name": "Chat",
+        "address": "0x9a1dd9aab7ccd9de3318cf97ce1d691176e10562"
+      },
+      "0x22305d7366a42bb1556e7206730df74de4ef1f7eaf1e52c3529ae382f7967f15": {
+        "name": "Chat",
+        "address": "0x5086a63237623ed64be69c4db75f2a0d652ac36e"
       }
     },
     "name": "development"

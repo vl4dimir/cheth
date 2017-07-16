@@ -2,6 +2,9 @@
   "default": {
     "gas": "auto",
     "contracts": {
+        "Chat": {
+            "address": "0x17b07f16b3ffce5c83aca6c4ef6a5a57cd9168f1"
+        }
     }
   }
 }
