@@ -2,6 +2,7 @@ pragma solidity ^0.4.2;
 
 contract Chat {
 	struct User {
+		address addr;
 		string nickname;
 
 		// An off-by-one index of this user in the onlineUsers map. If it's zero, the user is not
@@ -11,12 +12,12 @@ contract Chat {
 
 	address owner;
 	mapping(address => User) users;
-	address[] onlineUsers;
+	User[] onlineUsers;
 
 	event SendMessage(address from, string nickname, string message);
 	event NotRegistered(address from);
 	event UserRegister(address from, string nickname);
-	event UserJoin(address from, string nickname);
+	event UserOnline(address from, string nickname);
 	event UserLeave(address from, string nickname);
 
 	function Chat() {
@@ -24,18 +25,23 @@ contract Chat {
 	}
 
 	function register(string nickname) {
+		if (bytes(nickname).length == 0) throw;
+
+		users[msg.sender].addr = msg.sender;
 		users[msg.sender].nickname = nickname;
 
 		UserRegister(msg.sender, nickname);
 	}
 
 	function join() {
-		onlineUsers.push(msg.sender);
+		onlineUsers.push(users[msg.sender]);
 
 		// Index will be off-by-one intentionally, see comment for onlineIndex
 		users[msg.sender].onlineIndex = onlineUsers.length;
 
-		UserJoin(msg.sender, users[msg.sender].nickname);
+		for (uint i = 0; i < onlineUsers.length; i++) {
+			UserOnline(onlineUsers[i].addr, onlineUsers[i].nickname);
+		}
 	}
 
 	function leave() {

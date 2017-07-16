@@ -32,6 +32,18 @@
       "0x2dcf538766dcb1d26eb2d7d72b8d0c59eaca997173a7b45119af99f87bd9fc16": {
         "name": "Chat",
         "address": "0x61afe1945ee07f7de7723cb368fbcbf4ebb791a3"
+      },
+      "0x0151210eaadabe0de5a41e982e9fa3f853ef6031c4ac14fd3aadc2ddc1b620f5": {
+        "name": "Chat",
+        "address": "0x728b55cbbcdf7025da6ce1ac9c0622e9cbe4b876"
+      },
+      "0x60ca224fa3188334301a65d91483af2e36bf3e0b2d43f1f517b3c65137efeb06": {
+        "name": "Chat",
+        "address": "0xa10f7e59e8e526ece7141027134c316adf1725f4"
+      },
+      "0xfe73ba69940df1b7871229c19fc27002f241df6e687e1cb76979f88dea056fe5": {
+        "name": "Chat",
+        "address": "0x6c57e390819dd8a4bd2149188daef22c588b9f18"
       }
     },
     "name": "development"
