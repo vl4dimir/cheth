@@ -18,12 +18,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         if(event.args.from == web3.eth.accounts[0]) {
             console.log("Sorry your nickname is empty. Please register!");
-            console.log(event)
+            console.log(event);
+
+            Chat.register("Steamrunner");
         } else {
             console.log("this isn't message for you, ignore...");
         }
 
-        Chat.register("Steamrunner");
     });
 
     Chat.SendMessage().then(function(event) {
